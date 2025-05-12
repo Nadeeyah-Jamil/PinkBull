@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.LoginContainer {
+  width: 100%;
+  margin-top: 8%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginWrapper {
+  display: flex;
+  flex-direction: row; /* Image on the right */
+  width: 100%;
+  max-width: 1100px;
+  min-height: 400px;
+  background-color: #fbecea;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.LoginFormBox {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fbecea;
+}
+
+.Login-heading {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #8B5E3C;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.LP-div {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.LP-div label {
+  display: block;
+  font-weight: bold;
+  color: #8B5E3C;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.LP-div input {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  font-size: 1.1rem;
+  border: 1px solid #dca7a7;
+  border-radius: 8px;
+    background-color: #fbecea;
+}
+
+.LP-div input:focus {
+  outline: none;
+  border-color: #8B5E3C;
+  color: #70492b;
+  box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.2);
+}
+
+.Login-btn {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1.05rem;
+  margin-top: 1.3rem;
+  background-color: #8B5E3C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Login-btn:hover {
+  background-color: #70492b;
+}
+
+.error-login {
+  color: #c0392b;
+  padding-top: 2%;
+}
+
+.LoginWrapper {
+  display: flex;
+  flex-direction: row; /* Ensures left to right layout */
+  width: 100%;
+  height: auto;
+  background-color: #fbecea;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.LoginFormBox {
+  flex: 1; /* Smaller portion */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fbecea;
+}
+
+.LoginImageBox {
+  flex: 1.5; /* Increased width */
+  background-color: #fbecea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.LoginImage {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover; /* Or contain depending on your preference */
+}
+
+/* .LoginImage {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+} */
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .LoginWrapper {
+    flex-direction: column;
+  }
+
+  .LoginFormBox, .LoginImageBox {
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .LoginImage {
+    border-radius: 0 0 16px 16px;
+  }
+}
